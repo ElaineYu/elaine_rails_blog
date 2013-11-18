@@ -1,0 +1,36 @@
+<!-- posts_path helper is passed to the :url option -->
+<%= form_for :post, url: posts_path do |f| %>
+  
+  <!-- Error messages -->
+  <div id="error_explanation">
+    <% if @post.errors.any? %>
+    <h2><%= pluralize(@post.errors.count, "error")%> prohibited this post from being saved: </h2>
+    
+    <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+          <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <!-- New post form -->
+  <div class="input_boxes">
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+  </div>
+ 
+  <div class="input_boxes">  
+    <p>
+      <%= f.label :text %><br>
+      <%= f.text_area :text %>
+    </p>
+  </div>
+
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

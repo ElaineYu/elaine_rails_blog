@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	background-image: url('/assets/IMG_3073.jpg');
+	background-size:1300px 1300px;
+	background-repeat:no-repeat;
+	text-align: center;
+}
+
+.input_boxes {
+     width:20%;
+     
+	 border-radius: 20px;
+}
+
+label {
+
+	background-color:  #00FF99;
+	padding: 5px 5px 5px 5px;
+
+	border-radius: 20px;
+}
+
+h1 {
+	background-color: #00FF99;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+p {
+	color: red;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+a {
+	color: red;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	background-color: #00FF99;
+	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+}
+
+table {
+
+}
+td {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	background-color: white;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+th {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	background-color: white;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
